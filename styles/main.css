@@ -98,3 +98,34 @@
       right: 15px;
       line-height: 16px;
     }
+
+/* band content area */
+/* photo */
+.ds-band-image-container img {
+  width: 100%;
+}
+
+/* social links */
+.ds-band-social {
+  margin: 1em 0;
+  text-align: right;
+}
+  .ds-band-social a {
+    background: transparent url(/images/social-sprite.png) no-repeat 0 0;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 2px;
+    text-align: left;
+    text-indent: -32768px;
+    overflow: hidden;
+  }
+    .ds-band-social .fb {
+      background-position: -64px 0;
+    }
+    .ds-band-social .yt {
+      background-position: -32px 0;
+    }
+    .ds-band-social .www {
+      background-position: -96px 0;
+    }
