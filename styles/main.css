@@ -1,0 +1,22 @@
+/* header */
+#header {
+  position: relative;
+  padding: 12px 0;
+}
+  #header-logo {
+    width: 120px;
+    height: 36px;
+  }
+  #header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 0;
+  }
+  #header .ui-btn {
+    margin-top: 12px;
+  }
+
+/* subheader */
+#sub-header .ui-select {
+  display: inline-block;
+}

@@ -12,51 +12,55 @@
   <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
 
+  <link rel="stylesheet" href="styles/main.css" />
+
 </head>
 
 <body>
-  <div id="page"> 
-
-    <div id="header">
-      <a href="/" id="header-logo"><img alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></a>
-      <div id="header-nav">
-        <a href="javascript: return false;" id="header-touch-menu">Menu</a>
-        <a href="javascript: return false;" id="header-login">Log in</a>
-      </div>
-    </div>    
-
-    <div id="ds-content">
-      <form class="ds-arrange header-panel" action=".">
+    <div data-role="page" data-theme="b">
+      <div id="header" data-role="header" >
         <div>
-          <label>Arrange:</label>
+          <h1><img id="header-logo" alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></h1>
 
-          <select id="ds-arrange-select">
-            <option value="/" selected="selected">Headliners First</option>
-            <option value="/?sort=alpha">Alphabetical</option>
-            <option value="/?sort=day">By Day</option>
-          </select>
+          <a href="#" class="ui-btn-left" data-icon="arrow-l" id="header-back">Back</a>
+          <a href="#" class="ui-btn-right" id="header-login">Log in</a>
         </div>
-      </form>
+      </div><!-- /header -->
+      <div class="ui-bar ui-bar-c" id="sub-header">
+        <form class="ds-arrange header-panel" action=".">
+          <div>
+            <label>Arrange:</label>
 
-      <ul class="ds-bands-list ds-main-content">
-        <li class="ds-single-band">
-          <img alt="Deadmau5" class="ds-single-band-img" src="http://s3.amazonaws.com/dostuff-production/photos/350360/Deadmau5_sq_44.jpg">
-          <a href="/band-dm.html" class="ds-single-band-title">Deadmau5</a>
-          <form action="/" method="post">
-              <button class="ds-attend-checkbox">Attend</button>
-          </form>
-        </li>
+            <select id="ds-arrange-select">
+              <option value="/" selected="selected">Headliners First</option>
+              <option value="/?sort=alpha">Alphabetical</option>
+              <option value="/?sort=day">By Day</option>
+            </select>
+          </div>
+        </form>
+      </div>
 
-        <li class="ds-single-band ">
-          <img alt="MSTRKRFT" class="ds-single-band-img" src="http://s3.amazonaws.com/dostuff-production/photos/350150/MSTRKRFT_sq_44.jpg">
-          <a href="/band-mst.html" class="ds-single-band-title">MSTRKRFT</a>
-          <form action="/" method="post">
-              <button class="ds-attend-checkbox">Attend</button>
-          </form>
-        </li>
+      <div data-role="content">
+        <ul class="ds-bands-list ds-main-content">
+          <li class="ds-single-band">
+            <img alt="Deadmau5" class="ds-single-band-img" src="http://s3.amazonaws.com/dostuff-production/photos/350360/Deadmau5_sq_44.jpg">
+            <a href="/band-dm.html" class="ds-single-band-title">Deadmau5</a>
+            <form action="/" method="post">
+                <button class="ds-attend-checkbox">Attend</button>
+            </form>
+          </li>
 
-      </ul>
-    </div> <!-- #ds_content ends -->
-  </div>  <!-- #page ends -->
+          <li class="ds-single-band ">
+            <img alt="MSTRKRFT" class="ds-single-band-img" src="http://s3.amazonaws.com/dostuff-production/photos/350150/MSTRKRFT_sq_44.jpg">
+            <a href="/band-mst.html" class="ds-single-band-title">MSTRKRFT</a>
+            <form action="/" method="post">
+                <button class="ds-attend-checkbox">Attend</button>
+            </form>
+          </li>
+
+        </ul>
+      </div><!-- /content -->
+
+    </div><!-- /page -->
 </body>
 </html>
