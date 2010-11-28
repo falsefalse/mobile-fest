@@ -15,6 +15,19 @@
   #header .ui-btn {
     margin-top: 12px;
   }
+  #header #header-menu {
+    position: absolute;
+    top: 9px;
+    right: 75px;
+  }
+
+#header-menu {
+  background: url(/images/menu.png) no-repeat 0 0;
+  width: 24px;
+  height: 24px;
+  text-indent: -32768px;
+  overflow: hidden;
+}
 
 /* subheader */
 #sub-header {
