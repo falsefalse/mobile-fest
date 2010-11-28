@@ -9,23 +9,36 @@
   <script>document.documentElement.className = 'js';</script>
 
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
   <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+  <script src="/js/main.js"></script>
 
 </head>
 
 <body>
-  <div id="page"> 
+  <div data-role="page" data-theme="b">
+    <div id="header" data-role="header" >
+      <div>
+        <h1><img id="header-logo" alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></h1>
 
-    <div id="header">
-      <a href="/" id="header-logo"><img alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></a>
-      <div id="header-nav">
-        <a href="javascript: return false;" id="header-touch-menu">Menu</a>
-        <a href="javascript: return false;" id="header-login">Log in</a>
+        <a href="#" class="ui-btn-right" id="header-login">Log in</a>
       </div>
-    </div>    
+    </div><!-- /header -->
+    <div class="ui-bar ui-bar-c" id="sub-header">
+      <form action=".">
+        <label>Arrange:</label>
 
-    <div id="ds-content">
+        <select id="ds-arrange-select">
+          <option value="/" selected="selected">Headliners First</option>
+          <option value="/?sort=alpha">Alphabetical</option>
+          <option value="/?sort=day">By Day</option>
+        </select>
+      </form>
+    </div>
+
+    <div data-role="content">
       <div class="ds-band ds-main-content"> 
         <div class="ds-band-head "> 
           <h1 class="ds-band-title">Deadmau5</h1> 
@@ -50,7 +63,8 @@
           Deadmau5 — that’s pronounced “dead mouse” — is the stage name of Toronto house DJ/producer Joel Zimmerman. Voted “Producer of the Year” at the DJ Mag Awards, he was the most awarded artist at the 2008 Beatport Music Awards, received a Juno (Canadian Grammy) and, at the Ibiza 2008 awards, was awarded “Best Electro DJ.” His innovative style (as shown on 2008’s Random Album Title) seamlessly incorporates techno, trance and electro, and his live performances are experiences that have to be seen, heard and felt to be believed — and not just because of the spectacle of his trademark giant “Mau5head” helmet.
         </div> 
       </div> 
-    </div> <!-- #ds_content ends -->
-  </div>  <!-- #page ends -->
+    </div><!-- /content -->
+
+  </div><!-- /page -->
 </body>
 </html>

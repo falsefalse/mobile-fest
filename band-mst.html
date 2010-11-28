@@ -9,22 +9,36 @@
   <script>document.documentElement.className = 'js';</script>
 
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
   <script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
+  <script src="/js/main.js"></script>
+
 </head>
 
 <body>
-  <div id="page"> 
+  <div data-role="page" data-theme="b">
+    <div id="header" data-role="header" >
+      <div>
+        <h1><img id="header-logo" alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></h1>
 
-    <div id="header">
-      <a href="/" id="header-logo"><img alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></a>
-      <div id="header-nav">
-        <a href="javascript: return false;" id="header-touch-menu">Menu</a>
-        <a href="javascript: return false;" id="header-login">Log in</a>
+        <a href="#" class="ui-btn-right" id="header-login">Log in</a>
       </div>
-    </div>    
+    </div><!-- /header -->
+    <div class="ui-bar ui-bar-c" id="sub-header">
+      <form action=".">
+        <label>Arrange:</label>
 
-    <div id="ds-content">
+        <select id="ds-arrange-select">
+          <option value="/" selected="selected">Headliners First</option>
+          <option value="/?sort=alpha">Alphabetical</option>
+          <option value="/?sort=day">By Day</option>
+        </select>
+      </form>
+    </div>
+
+    <div data-role="content">
       <div class="ds-band ds-main-content"> 
         <div class="ds-band-head "> 
           <h1 class="ds-band-title">MSTRKRFT</h1> 
@@ -47,7 +61,8 @@
           Formed in 2005, Canadian electronica export MSTRKRFT (that’s “Masterkraft,” if you’re one of those “I’d like to buy a vowel” types) is the duo of Jesse F. Keeler and Alex Puodziukas (aka Al-P). Prior to forming MSTRKRFT, they worked together when Al-P produced albums for Keeler’s previous bands Death from Above 1979 and Black Cat#13. The duo’s 2006 debut, The Looks, was praised by critics, with Alternative Press dubbing it “sweaty and thick, convincingly urgent and highly sexual.” MSTRKRFT released its second full-length, the hard-hitting Fist of God, this year.
         </div> 
       </div> 
-    </div> <!-- #ds_content ends -->
-  </div>  <!-- #page ends -->
+    </div><!-- /content -->
+
+  </div><!-- /page -->
 </body>
 </html>
