@@ -20,3 +20,36 @@
 #sub-header .ui-select {
   display: inline-block;
 }
+
+/* main page: bands list */
+.bands-list {}
+  .bands-list .ui-li .ui-btn-inner {
+    min-height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 92px;
+  }
+    .bands-list .ui-li .ui-btn-inner .ui-btn-text a {
+      line-height: 44px; /* vertically center band name */
+    }
+    .bands-list .ui-li .ui-btn-inner .ui-btn-text .ui-icon-custom-checkbox {
+      left: 8px;
+      right: auto;
+    }
+      .ui-icon-custom-checkbox {
+        background-size: 18px 36px;
+        background-color: transparent;
+        background-image: url(/images/form-check-sprite.png);
+        background-repeat: no-repeat;
+        border-radius: 0;
+      }
+        .ui-icon-custom-checkbox-on {
+          background-position: 0 -18px;
+        }
+        .ui-icon-custom-checkbox-off {
+          background-position: 0 0;
+        }
+  .bands-list .ui-li-thumb {
+    top: 10px;
+    left: 38px;
+  }
