@@ -17,8 +17,15 @@
   }
 
 /* subheader */
+#sub-header {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+}
 #sub-header .ui-select {
   display: inline-block;
+  line-height: 16px;
 }
 
 /* main page: bands list */
@@ -66,3 +73,16 @@
   .ui-icon-custom-checkbox-on {
     background-position: 0 -18px;
   }
+
+/* band pages */
+/* sub header */
+.band-header p,
+.band-header form {
+  display: inline;
+}
+.band-header form a.ui-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  line-height: 16px;
+}
