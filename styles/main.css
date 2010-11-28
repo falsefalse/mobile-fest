@@ -129,3 +129,17 @@
     .ds-band-social .www {
       background-position: -96px 0;
     }
+
+/* slide note*/
+#slide-note {
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  color: #7A7A7A;
+}
+  #slide-note strong {
+    display: inline-block;
+    height: 13px;
+    line-height: 13px;
+    font-size: 26px;
+  }
