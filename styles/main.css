@@ -52,16 +52,17 @@
         left: 8px;
         right: auto;
       }
-      .bands-list .ui-li .ui-btn-inner input[type=checkbox] {
-        display: none;
-      }
   .bands-list .ui-li-thumb {
     top: 10px;
     left: 38px;
   }
 
 /* custom checkbox */
+.ui-checkbox {
+  cursor: pointer;
+}
 .ui-icon-custom-checkbox {
+  display: inline-block;
   background-size: 18px 36px;
   background: transparent url(/images/form-check-sprite.png) no-repeat;
   border-radius: 0;
@@ -73,6 +74,9 @@
   .ui-icon-custom-checkbox-on {
     background-position: 0 -18px;
   }
+    .ui-icon-custom-checkbox input[type=checkbox] {
+      display: none;
+    }
 
 /* band pages */
 /* sub header */
@@ -80,9 +84,17 @@
 .band-header form {
   display: inline;
 }
-.band-header form a.ui-btn {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  line-height: 16px;
-}
+  .band-header .ui-checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 45px;
+  }
+    .band-header .ui-icon-custom-checkbox {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      line-height: 16px;
+    }
