@@ -1,23 +1,36 @@
 /* header */
 #header {
   position: relative;
-  padding: 12px 0;
+  height: 60px;
 }
   #header-logo {
     width: 120px;
     height: 36px;
   }
+    #header #header-logo {
+      position: relative;
+      top: 12px
+    }
+    @media screen and (max-width: 320px) {
+      #header #header-logo {
+        width: auto;
+        height: 30px;
+        top: 15px;
+      }
+    }
+
   #header h1 {
     text-align: center;
     margin: 0;
     font-size: 0;
+    line-height: 60px;
   }
   #header .ui-btn {
-    margin-top: 12px;
+    top: 15px
   }
   #header #header-menu {
     position: absolute;
-    top: 9px;
+    top: 18px;
     right: 75px;
   }
 
