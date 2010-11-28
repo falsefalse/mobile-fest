@@ -17,6 +17,13 @@
         height: 30px;
         top: 15px;
       }
+      .whole-page-index #header #header-logo {
+        position: absolute;
+        width: 120px;
+        height: 36px;
+        left: 15px;
+        top: 15px;
+      }
     }
 
   #header h1 {
