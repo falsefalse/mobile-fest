@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>DoStuff Demo Festival</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <meta name="title" content="DoStuff Demo Festival">
+
+  <link rel="shortcut icon" href="http://cdn1.dostuffmedia.com/themes/festival_default_mobile/images/favicon.ico" type="image/x-icon">
+  
+  <script>document.documentElement.className = 'js';</script>
+</head>
+
+<body>
+  <div id="page"> 
+
+    <div id="header">
+      <a href="/" id="header-logo"><img alt="Do512 What To Do in Austin" src="http://cdn0.dostuffmedia.com/themes/festival_default_mobile/images/logo.png?1290836427"></a>
+      <div id="header-nav">
+        <a href="/touch-menu" id="header-touch-menu">Menu</a>
+        <a href="/login" id="header-login">Log in</a>
+      </div>
+    </div>    
+
+    <div id="ds-content">
+      <form class="ds-arrange header-panel" action=".">
+        <div>
+          <label>Arrange:</label>
+
+          <select id="ds-arrange-select">
+            <option value="/" selected="selected">Headliners First</option>
+            <option value="/?sort=alpha">Alphabetical</option>
+            <option value="/?sort=day">By Day</option>
+          </select>
+        </div>
+      </form>
+
+      <ul class="ds-bands-list ds-main-content">
+        <li class="ds-single-band">
+          <img alt="Deadmau5" class="ds-single-band-img" src="http://s3.amazonaws.com/dostuff-production/photos/350360/Deadmau5_sq_44.jpg">
+          <a href="http://demo-04.dostuffmedia.com/band/deadmau5" class="ds-single-band-title">Deadmau5</a>
+          <form action="/band/23377/fans/toggle" method="post">
+              <button class="ds-attend-checkbox">Attend</button>
+          </form>
+        </li>
+
+        <li class="ds-single-band ">
+          <img alt="MSTRKRFT" class="ds-single-band-img" src="http://s3.amazonaws.com/dostuff-production/photos/350150/MSTRKRFT_sq_44.jpg">
+          <a href="http://demo-04.dostuffmedia.com/band/mstrkrft" class="ds-single-band-title">MSTRKRFT</a>
+          <form action="/band/7321/fans/toggle" method="post">
+              <button class="ds-attend-checkbox">Attend</button>
+          </form>
+        </li>
+
+      </ul>
+    </div> <!-- #ds_content ends -->
+  </div>  <!-- #page ends -->
+</body>
+</html>
