@@ -134,9 +134,12 @@
 
 /* band content area */
 /* photo */
-.ds-band-image-container img {
-  width: 100%;
+.ds-band-image-container {
+  text-align: center;
 }
+  .ds-band-image-container img {
+    width: 75%;
+  }
 
 /* social links */
 .ds-band-social {
