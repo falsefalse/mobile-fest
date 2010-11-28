@@ -1,10 +1,14 @@
 // emulate checkboxes with styled spans
 $(document).ready(function() {
+    // add our own transition
+    $.mobile.transitions.push('slideleft');
+
     // listen for page creation event
     // bind listner to the page wrapper, so we will get only new inputs on each new page creation
     // its important to listen to pagecreate, so checkboxes will be wrapped in div.ui-checkbox by the time we get in
     $('div.whole-page').live('pagecreate', function(event) {
-        $(this)
+        var $page = $(this);
+        $page
             .find('input.custom-checkbox')
             .each(function(i, input) {
                 var $input = $(input);
@@ -31,5 +35,18 @@ $(document).ready(function() {
                     }
                 });
         });
+
+        if ($page.hasClass('whole-page-band')) {
+            $page
+                .bind('swipeleft swiperight', function(event) {
+                    var prev = $page.data('band-prev');
+                    var next = $page.data('band-next');
+                    if (event.type == 'swiperight') {
+                        $.mobile.changePage(prev, 'slideleft', false, false);
+                    } else {
+                        $.mobile.changePage(next, 'slide', false, false);
+                    }
+                })
+        }
     });
 });

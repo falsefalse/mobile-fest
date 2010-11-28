@@ -169,3 +169,14 @@
     line-height: 13px;
     font-size: 26px;
   }
+
+/* slideleft transition, copied from .slide.reverse in JQM CSS */
+.slideleft.in {
+  -webkit-transform: translateX(0);
+  -webkit-animation-name: slideinfromleft;
+}
+
+.slideleft.out {
+  -webkit-transform: translateX(100%);
+  -webkit-animation-name: slideouttoright;
+}
